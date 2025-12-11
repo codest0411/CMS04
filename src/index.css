@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #f7f8ff;
+  background-color: #04040a;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #05060a;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 92, 244, 0.1), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(93, 255, 159, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(109, 219, 238, 0.12), transparent 40%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: #ff5cf4;
+  color: #04040a;
+}
