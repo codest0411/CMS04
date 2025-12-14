@@ -138,6 +138,20 @@ const DashboardLayout = () => {
                   </NavLink>
                 );
               })}
+              <div className="pt-3 mt-3 border-t border-white/10">
+                <button
+                  type="button"
+                  onClick={() => {
+                    logout();
+                    navigate('/login');
+                    setIsMobileNavOpen(false);
+                  }}
+                  className="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-sm font-semibold py-2 rounded-xl transition"
+                >
+                  <LogOut className="size-4" />
+                  Logout
+                </button>
+              </div>
             </nav>
           )}
           <div className="rounded-[32px] border border-white/10 bg-black/30 backdrop-blur-2xl p-6">
