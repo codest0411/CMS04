@@ -14,6 +14,7 @@ const BlogsPage = () => (
       { name: 'title', label: 'Title', placeholder: 'Designing with neon gradients', validation: { required: 'Title required' } },
       { name: 'slug', label: 'Slug', placeholder: 'designing-with-neon-gradients', validation: { required: 'Slug required' } },
       { name: 'excerpt', label: 'Excerpt', type: 'textarea', placeholder: 'Two-line teaser for the article' },
+      { name: 'content', label: 'Content', type: 'textarea', rows: 10, placeholder: 'Full article content (Markdown supported)' },
       {
         name: 'preview_image_file',
         label: 'Preview image',
