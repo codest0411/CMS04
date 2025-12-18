@@ -30,6 +30,7 @@ const ExperiencePage = () => (
         type: 'textarea',
         rows: 3,
         placeholder: 'e.g. React.js, Node.js, TypeScript',
+        transform: (value) => value ? value.split(',').map(s => s.trim()).filter(Boolean) : [],
       },
     ]}
   />

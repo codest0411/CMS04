@@ -45,6 +45,7 @@ const EducationPage = () => (
         type: 'textarea',
         rows: 3,
         placeholder: 'e.g. Data Structures, Algorithms, Machine Learning',
+        transform: (value) => value ? value.split(',').map(s => s.trim()).filter(Boolean) : [],
       },
     ]}
   />

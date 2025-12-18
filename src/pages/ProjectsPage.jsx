@@ -32,6 +32,7 @@ const ProjectsPage = () => (
         type: 'textarea',
         rows: 2,
         placeholder: 'React.js, Node.js, Tailwind CSS, Supabase',
+        transform: (value) => value ? value.split(',').map(s => s.trim()).filter(Boolean) : [],
       },
       { name: 'featured', label: 'Featured', type: 'checkbox', checkboxLabel: 'Pin to hero slider' },
       { name: 'started_on', label: 'Started on', type: 'date' },
